@@ -11,7 +11,7 @@ def analyse(image_path):
     buf = io.BytesIO()
     img.save(buf, format="PNG")
 
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash")
 
     prompt = """Analyse this prescription. Return ONLY valid JSON, no markdown.
 
